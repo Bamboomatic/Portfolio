@@ -1,2 +1,9 @@
 @import './test/bg';
 @import './test/initMenu';
+
+
+.mainWidthContainer {
+  width: 1280px;
+  border: 1px solid red;
+  margin: 0 auto;
+}
