@@ -1,7 +1,6 @@
 var path = require("path");
-
 var Html = require('html-webpack-plugin');
- 
+
 module.exports = {
   entry: [
     "whatwg-fetch", // polyfill dla fetch
@@ -24,12 +23,15 @@ module.exports = {
         exclude: /node_modules/,
         use: {
           loader: "babel-loader",
-          options: {
+          query: {
             presets: [
               '@babel/env', // transpiluj szystko zgodnie z ustawieniami
                      // w pliku .browserlistrc definiujemy wsparcie urządzeń
                      // https://github.com/browserslist/browserslist
               '@babel/react', // jsx -> js
+            ],
+            plugins: [
+              '@babel/plugin-proposal-class-properties'
             ]
           }
         }
