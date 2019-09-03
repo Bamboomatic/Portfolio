@@ -1,9 +1,26 @@
+@import './test/reset';
 @import './test/bg';
 @import './test/initMenu';
 
+@import './mainPage/mainMenu';
+@import './mainPage/about';
+@import './mainPage/contact';
+@import './mainPage/footer';
+@import './mainPage/knowledge';
+@import './mainPage/projects';
 
-.mainWidthContainer {
-  width: 1280px;
+
+.centering {
   border: 1px solid red;
   margin: 0 auto;
+}
+
+.mainWidth {
+  width: 1280px;
+  margin: 0 auto;
+  background-color: lightcyan;
+}
+.mainHeight{
+  height: 100vh;
+  border: 1px solid blue;
 }

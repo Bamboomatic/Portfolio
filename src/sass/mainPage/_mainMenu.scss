@@ -1,0 +1,35 @@
+.mainMenu {
+  width: 100vw;
+  height: 80px;
+  padding: 10px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.mainMenuDiv {
+  width: 200px;
+  height: 60px;
+  background-color: grey;
+  margin: 10px;
+  display: flex;
+}
+
+.mainMenuButtons {
+  text-decoration: none;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+
+}
+
+.mainMenuButtonsText {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
+  color: lightgray;
+  padding: 2px;
+}
