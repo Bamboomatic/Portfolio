@@ -53,7 +53,7 @@ class App extends Component{
 
         return(
 
-            <div className={`load-in ${didMount && 'visible'}`}>
+            <div className={`load-in ${didMount && 'visible'} bckgd`}>
                     <MainMenu handleClick={this.handleClick}/>
                     <About/>
                     <Knowledge/>

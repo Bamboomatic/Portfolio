@@ -34,7 +34,7 @@
     height: 10px;
     border-radius: 50%;
     transform: translate(100px);
-    animation: circling 3s 1.5s infinite;
+    animation: circling 3s 3.5s infinite;
     animation-timing-function: linear;
   }
 
@@ -45,7 +45,7 @@
     height: 10px;
     border-radius: 50%;
     transform: translate(160px);
-    animation: circling 3s infinite linear;
+    animation: circling 3s 2s infinite linear;
   }
 
 
