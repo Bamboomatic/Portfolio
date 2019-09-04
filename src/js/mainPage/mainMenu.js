@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
+import { Link, animateScroll as scroll } from "react-scroll";
 
 class MainMenu extends Component{
+
+
 
     handleBtn = (e) => {
         return(
@@ -14,24 +17,24 @@ class MainMenu extends Component{
             <>
                 <div className="mainMenu">
                     <div className="mainMenuDiv">
-                        <a href="#about"   value="1" onMouseEnter={this.handleBtn} className="mainMenuButtons">
+                        <Link activeClass="active" to="about" spy={true} smooth={true} offset={-70} duration= {500}  value="1" onMouseEnter={this.handleBtn} className="mainMenuButtons">
                             <div className="mainMenuButtonsText">About</div>
-                        </a>
+                        </Link>
                     </div>
                     <div className="mainMenuDiv">
-                        <a href="#skills" value="3" onMouseEnter={this.handleBtn} className="mainMenuButtons">
+                        <Link activeClass="active" to="skills" spy={true} smooth={true} offset={-70} duration= {500} value="3" onMouseEnter={this.handleBtn} className="mainMenuButtons">
                             <div className="mainMenuButtonsText">Skills</div>
-                        </a>
+                        </Link>
                     </div>
                     <div className="mainMenuDiv">
-                        <a href="#projects" value="2" onMouseEnter={this.handleBtn} className="mainMenuButtons">
+                        <Link activeClass="active" to="projects" spy={true} smooth={true} offset={-70} duration= {500}  value="2" onMouseEnter={this.handleBtn} className="mainMenuButtons">
                             <div className="mainMenuButtonsText">Projects</div>
-                        </a>
+                        </Link>
                     </div>
                     <div className="mainMenuDiv">
-                        <a href="#contact"  value="4" onMouseEnter={this.handleBtn} className="mainMenuButtons">
+                        <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-70} duration= {500}   value="4" onMouseEnter={this.handleBtn} className="mainMenuButtons">
                             <div className="mainMenuButtonsText">Contact</div>
-                        </a>
+                        </Link>
                     </div>
                     <div className="mainMenuDiv">
                         <a value="5" onClick={this.props.handleClick} onMouseEnter={this.handleBtn} className="mainMenuButtons">

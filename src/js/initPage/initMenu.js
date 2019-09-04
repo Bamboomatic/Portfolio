@@ -1,4 +1,11 @@
 import React, {Component} from 'react';
+import styled, {keyframes} from 'styled-components';
+import { bounce } from 'react-animations';
+
+
+const ButtonAnimated = styled.div`
+animation: ${keyframes`${bounce}`} 2s infinite;`;
+
 
 
 class InitMenu extends Component{
@@ -6,10 +13,13 @@ class InitMenu extends Component{
     render() {
         return(
             <div className="mainInit">
+
                 <div className="mainInitDiv">
+
                 </div>
                 <div className="mainInitDiv">
-                    <InitMenuButtons handleClick={this.props.handleClick}/>
+
+                        <InitMenuButtons handleClick={this.props.handleClick}/>
                 </div>
             </div>
         )
