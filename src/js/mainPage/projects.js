@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 class Projects extends Component{
     render() {
         return(
-            <div className="centering mainHeight">
+            <div className="centering mainHeight projectGalHeight" id="projects">
                 <div className="projectTable" >
                     <button className="projectBtn">L</button>
                     <div className="projectGrid">

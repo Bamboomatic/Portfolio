@@ -1,4 +1,6 @@
 @import './test/reset';
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+
 @import './test/bg';
 @import './test/initMenu';
 
@@ -9,6 +11,9 @@
 @import './mainPage/knowledge';
 @import './mainPage/projects';
 
+//html {
+//  scroll-behavior: smooth;
+//}
 
 .centering {
   border: 1px solid red;
@@ -21,6 +26,6 @@
   background-color: lightcyan;
 }
 .mainHeight{
-  height: 100vh;
+  height: 70vh;
   border: 1px solid blue;
 }
