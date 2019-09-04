@@ -22,6 +22,7 @@ class App extends Component{
     handleClick = (e) => {
         this.setState({
             visibility: !this.state.visibility,
+            didMount: !this.state.didMount,
         })
         console.log(this.state.visibility)
     }
@@ -29,23 +30,30 @@ class App extends Component{
     componentDidMount() {
         setTimeout(() => {
             this.setState({didMount: true})
-        }, 100)
+        }, 100);
     }
 
-    render() {
+    componentDidUpdate() {
+        setTimeout(() => {
+            this.setState({didMount: true})
+        }, 100);
+    }
 
+
+    render() {
+        const {didMount} = this.state;
         if(this.state.visibility){
-            const {didMount} = this.state;
+
             return(
-                <div className={`fade-in ${didMount && 'visible'}`}>
+                <div className={`load-in ${didMount && 'visible'}`}>
                     <InitMenu handleClick={this.handleClick}/>
                 </div>
             )
         }
-        const {didMount} = this.state;
+
         return(
 
-            <div className={`fade-in ${didMount && 'visible'}`}>
+            <div className={`load-in ${didMount && 'visible'}`}>
                     <MainMenu handleClick={this.handleClick}/>
                     <About/>
                     <Knowledge/>

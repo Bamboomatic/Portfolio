@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 import styled, {keyframes} from 'styled-components';
-import { bounce } from 'react-animations';
+import { bounce, rotateInDownLeft, rotateInDownRight } from 'react-animations';
 
 
-const ButtonAnimated = styled.div`
-animation: ${keyframes`${bounce}`} 2s infinite;`;
-
+const ButtonAnimated = styled.div`animation: ${keyframes`${bounce}`} 2s infinite;`;
+const LeftDiv = styled.div`animation: ${keyframes`${rotateInDownLeft}`} 2s;`;
+const RightDiv = styled.div`animation: ${keyframes`${rotateInDownRight}`} 2s;`;
 
 
 class InitMenu extends Component{
@@ -14,13 +14,16 @@ class InitMenu extends Component{
         return(
             <div className="mainInit">
 
-                <div className="mainInitDiv">
+                <LeftDiv>
+                    <div  className="mainInitDiv L">
 
-                </div>
-                <div className="mainInitDiv">
-
+                    </div>
+                </LeftDiv>
+                <RightDiv>
+                    <div  className="mainInitDiv R">
                         <InitMenuButtons handleClick={this.props.handleClick}/>
-                </div>
+                    </div>
+                </RightDiv>
             </div>
         )
     }
