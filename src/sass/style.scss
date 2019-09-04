@@ -29,3 +29,12 @@ html {
   height: 70vh;
   border: 1px solid blue;
 }
+
+// animacja zmiany strony
+.fade-in {
+  opacity: 0;
+}
+.fade-in.visible {
+  transition: opacity 1s ease-in;
+  opacity: 1;
+}

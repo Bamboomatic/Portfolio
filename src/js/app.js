@@ -16,6 +16,7 @@ import Footer from "./mainPage/footer";
 class App extends Component{
     state = {
         visibility: true,
+        didMount: false,
     }
 
     handleClick = (e) => {
@@ -25,16 +26,26 @@ class App extends Component{
         console.log(this.state.visibility)
     }
 
+    componentDidMount() {
+        setTimeout(() => {
+            this.setState({didMount: true})
+        }, 100)
+    }
+
     render() {
+
         if(this.state.visibility){
+            const {didMount} = this.state;
             return(
-                <>
-                        <InitMenu handleClick={this.handleClick}/>
-                </>
+                <div className={`fade-in ${didMount && 'visible'}`}>
+                    <InitMenu handleClick={this.handleClick}/>
+                </div>
             )
         }
+        const {didMount} = this.state;
         return(
-            <>
+
+            <div className={`fade-in ${didMount && 'visible'}`}>
                     <MainMenu handleClick={this.handleClick}/>
                     <About/>
                     <Knowledge/>
@@ -42,7 +53,7 @@ class App extends Component{
                     <Gallery/>
                     <Contact/>
                     <Footer/>
-            </>
+            </div>
         )
     }
 }
