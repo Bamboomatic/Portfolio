@@ -1,4 +1,5 @@
 @import './test/reset';
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
 @import "~react-image-gallery/styles/scss/image-gallery.scss";
 
 @import './test/bg';
@@ -13,9 +14,10 @@
 
 html {
   scroll-behavior: smooth;
+  font-family: 'Titillium Web', sans-serif;
 }
 .bckgd{
-  background-color: black;
+  background-color: white;
 }
 
 .centering {
@@ -24,9 +26,10 @@ html {
 }
 
 .mainWidth {
-  width: 1280px;
+  max-width: 1920px;
+  min-width: 1280px;
   margin: 0 auto;
-  background-color: ivory;
+  background-color: white;
 }
 .mainHeight{
   height: 70vh;
@@ -40,4 +43,19 @@ html {
 .load-in.visible {
   transition: opacity 1s ease-in;
   opacity: 1;
+}
+
+// wielkość nagłówków i zawartości strony
+.container {
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 3rem;
+  position: relative;
+  overflow: overlay;
+  .containerDiv{
+    font-size: 1.4rem;
+    text-indent: 10%;
+    padding: 5%;
+
+  }
 }

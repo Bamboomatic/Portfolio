@@ -13,12 +13,38 @@
   margin: 0 auto;
 }
 .projectElement{
-  width: 50%;
+  width: 100%;
   height: 500px;
   margin: 5px;
-  border: 1px solid greenyellow;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  //border: 1px solid greenyellow;
 }
 
 .projectGalHeight{
   display: inline;
+}
+
+.thumb{
+  max-height: 200px;
+  padding: 10px;
+}
+.thumb:hover{
+  animation: thumbnails 0.5s linear forwards;
+}
+
+@keyframes thumbnails {
+  25%{
+    transform: translate3d(0rem, 1rem, 1rem) scale(0.9);
+  }
+  50%{
+    transform: translate3d(0rem, 1rem, 1rem) scale(1.1);
+  }
+  75%{
+    transform: translate3d(0rem, 1rem, 1rem) scale(1.0);
+  }
+  100%{
+    transform: translate3d(0rem, 1rem, 1rem) scale(1.3);
+  }
 }

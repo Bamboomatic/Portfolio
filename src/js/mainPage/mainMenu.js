@@ -14,22 +14,22 @@ class MainMenu extends Component{
 
     render() {
         return(
-            <>
+            <>  <div className="emptyDivMenu">  </div>
                 <div className="mainMenu">
 
                         <Link activeClass="active" to="about" spy={true} smooth={true} offset={-70} duration= {500}  value="1" onMouseEnter={this.handleBtn} className="mainMenuDiv mainMenuButtons mainMenuButtonsText">
-                           About
+                            aboutMe
                         </Link>
                         <Link activeClass="active" to="skills" spy={true} smooth={true} offset={-70} duration= {500} value="3" onMouseEnter={this.handleBtn} className="mainMenuDiv mainMenuButtons mainMenuButtonsText">
-                            Skills
+                            Skills()
                         </Link>
                         <Link activeClass="active" to="projects" spy={true} smooth={true} offset={-70} duration= {500}  value="2" onMouseEnter={this.handleBtn} className="mainMenuDiv mainMenuButtons mainMenuButtonsText">
-                            Projects
+                            .Projects
                         </Link>
                         <Link activeClass="active" to="contact" spy={true} smooth={true} offset={-20} duration= {500}   value="4" onMouseEnter={this.handleBtn} className="mainMenuDiv mainMenuButtons mainMenuButtonsText">
-                            Contact
+                            @Contact
                         </Link>
-                        <a value="5" onClick={this.props.handleClick} onMouseEnter={this.handleBtn} className="mainMenuDiv mainMenuButtons mainMenuButtonsText">
+                        <a value="5" onClick={this.props.handleClick} onMouseEnter={this.handleBtn} className="mainMenuDiv mainMenuButtons mainMenuButtonsText last">
                            Main Page
                         </a>
 

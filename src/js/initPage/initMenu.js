@@ -16,7 +16,7 @@ class InitMenu extends Component{
 
                 <LeftDiv>
                     <div  className="mainInitDiv L">
-
+                        <a href="#about" onClick={this.props.handleClick}><img href="#about" className="avatar" src="/src/images/undraw_female_avatar_l3ey.svg" alt="avatar"/></a>
                     </div>
                 </LeftDiv>
                 <RightDiv>
@@ -45,16 +45,16 @@ class InitMenuButtons extends Component{
         return(
             <>
                 <a href="#about" value="1" onMouseEnter={this.handleEnterAnimation} onClick={this.props.handleClick} className="initMenuButtons">
-                    <div className="initMenuButtonsText">O mnie</div>
+                    <div className="initMenuButtonsText">aboutMe</div>
                 </a>
                 <a href="#skills" value="3" onMouseEnter={this.handleEnterAnimation} onClick={this.props.handleClick} className="initMenuButtons">
-                    <div className="initMenuButtonsText">Skills</div>
+                    <div className="initMenuButtonsText">Skills()</div>
                 </a>
                 <a href="#projects"  value="2" onMouseEnter={this.handleEnterAnimation} onClick={this.props.handleClick} className="initMenuButtons">
-                    <div className="initMenuButtonsText">Projects</div>
+                    <div className="initMenuButtonsText">.Projects</div>
                 </a>
                 <a href="#contact"  value="4" onMouseEnter={this.handleEnterAnimation} onClick={this.props.handleClick} className="initMenuButtons">
-                    <div className="initMenuButtonsText">Contact</div>
+                    <div className="initMenuButtonsText">@Contact</div>
                 </a>
             </>
         )

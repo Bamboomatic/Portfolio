@@ -1,38 +1,51 @@
+.emptyDivMenu{
+  height: 30px;
+}
+
 .mainMenu {
   width: 100vw;
   height: 60px;
   background-color: black;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   position: fixed;
   z-index: 200;
 }
 
 .mainMenuDiv {
-  height: 30px;
-  max-width: 200px;
-  background-color: darkgoldenrod;
+  height: 40px;
+  max-width: 150px;
+  background-color: white;
   margin: 10px;
   border-radius: 5px;
-
 }
 
 .mainMenuButtons {
   text-decoration: none;
   width: 100%;
   justify-content: space-evenly;
-
 }
+
+.last{
+  margin-right: 20%;
+}
+
 .mainMenuButtons.active{
-  box-shadow: 0px 0px 30px indianred;
+  text-decoration: underline;
 }
 
 .mainMenuButtonsText {
   display: flex;
   align-items: center;
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: bold;
-  color: maroon;
+  color: black;
   padding: 2px;
+}
+
+.mainMenuButtonsText:hover{
+  color: white;
+  background-color: black;
+  cursor: pointer;
 }

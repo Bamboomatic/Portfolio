@@ -9,7 +9,6 @@ import MainMenu from "./mainPage/mainMenu";
 import About from "./mainPage/about";
 import Knowledge from "./mainPage/knowledge";
 import Projects from "./mainPage/projects";
-import Gallery from "./mainPage/gallery";
 import Contact from "./mainPage/contact";
 import Footer from "./mainPage/footer";
 
@@ -26,6 +25,8 @@ class App extends Component{
         })
         console.log(this.state.visibility)
     }
+
+
 
     componentDidMount() {
         setTimeout(() => {
@@ -58,7 +59,6 @@ class App extends Component{
                     <About/>
                     <Knowledge/>
                     <Projects/>
-                    <Gallery/>
                     <Contact/>
                     <Footer/>
             </div>

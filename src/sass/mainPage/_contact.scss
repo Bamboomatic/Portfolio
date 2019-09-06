@@ -1,0 +1,39 @@
+.contact{
+  font-size: 1.7rem;
+  width: 666px;
+  margin: 0 auto;
+
+}
+
+.contactForm{
+display: flex;
+  flex-direction: column;
+  margin: 1rem;
+
+}
+button, input, select, textarea {
+  margin: 10px;
+}
+
+select, input, textarea {
+  font: 70%;
+}
+
+.textarea{
+  height: 400px;
+}
+.button{
+  height: 45px;
+  background-color: black;
+  color: white;
+  border: 0;
+  padding: 0;
+}
+
+.icons{
+  font-size: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+}
